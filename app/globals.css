@@ -2,32 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: "ClashDisplayBold";
+    src: local("ClashDisplay-Bold.ttf"), url("../assets/fonts/ClashDisplay-Bold.ttf") format("truetype");
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: "ClashDisplayMedium";
+    src: local("ClashDisplay-Medium.ttf"), url("../assets/fonts/ClashDisplay-Medium.ttf") format("truetype");
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: "ClashDisplaySemibold";
+    src: local("ClashDisplay-Semibold.ttf"), url("../assets/fonts/ClashDisplay-Semibold.ttf") format("truetype");
 }

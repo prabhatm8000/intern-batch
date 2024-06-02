@@ -36,7 +36,7 @@ const Banner = () => {
                         x: -200,
                         opacity: 0,
                     }}
-                    whileInView={{
+                    animate={{
                         x: 0,
                         opacity: 1,
                     }}
@@ -52,7 +52,7 @@ const Banner = () => {
                         y: 0,
                         opacity: 0,
                     }}
-                    whileInView={{
+                    animate={{
                         x: 150,
                         y: 50,
                         opacity: 1,
@@ -73,7 +73,7 @@ const Banner = () => {
                         bottom: "0rem",
                         opacity: 0,
                     }}
-                    whileInView={{
+                    animate={{
                         left: "-100%",
                         bottom: "-24rem",
                         opacity: 1,

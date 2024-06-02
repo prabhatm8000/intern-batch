@@ -1,4 +1,5 @@
-This is a sample landing page built with Next.js, Framer, TypeScript and TailwindCSS.
+This is a sample landing page built with Next.js, Framer, TypeScript and TailwindCSS. 
+Supports light, dark and system themes.
 
 ## Deploy on Vercel
 

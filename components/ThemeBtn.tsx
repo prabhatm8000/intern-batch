@@ -1,35 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import useStoredTheme from "@/hooks/useStoredTheme";
+import { useState } from "react";
 import { CiDark, CiLight } from "react-icons/ci";
 
-type ThemeType = "light" | "dark" | "system" | null;
+export type ThemeType = "light" | "dark" | "system" | null;
 
 const ThemeBtn = () => {
-    const getSystemTheme = () => {
-        return window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light";
-    };
-
-    const getValidTheme = (theme: string | null): ThemeType => {
-        if (theme === "light" || theme === "dark") {
-            return theme;
-        }
-        return getSystemTheme();
-    };
-
-    const [theme, setTheme] = useState<ThemeType>(
-        getValidTheme(localStorage.getItem("theme"))
-    );
-
-    useEffect(() => {
-        if (theme === "dark") {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    }, [theme]);
+    const { theme, setTheme, getSystemTheme } = useStoredTheme();
 
     const handleTheme = (value: ThemeType) => {
         if (value === "light") {

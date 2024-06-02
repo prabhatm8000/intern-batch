@@ -22,7 +22,7 @@ git clone https://github.com/prabhatm8000/intern-batch
 cd intern-batch
 ```
 
-3. Install dependencies for both client and server:
+3. Install dependencies:
 
 ```bash
 npm install
@@ -34,4 +34,4 @@ npm install
 npm run dev
 ```
 
-5. Open your browser and navigate to http://localhost:3000 to play the game.
+5. Open your browser and navigate to http://localhost:3000
